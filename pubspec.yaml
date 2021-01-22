@@ -84,7 +84,15 @@ flutter:
   # maintain consistency when adding or modifying assets and plugins.
   # They also do not have any bearing on your native host application's
   # identifiers, which may be completely independent or the same as these.
-  module:
-    androidX: true
-    androidPackage: com.gkash.gkashpayment
-    iosBundleIdentifier: com.gkash.gkashpayment
+  # module:
+  #   androidX: true
+  #   androidPackage: com.gkash.gkashpayment
+  #   iosBundleIdentifier: com.gkash.gkashpayment
+    
+  plugin:
+    platforms:
+      android:
+        package: com.gkash.gkashpayment
+        pluginClass: GkashpaymentPlugin
+      ios:
+        pluginClass: GkashpaymentPlugin
